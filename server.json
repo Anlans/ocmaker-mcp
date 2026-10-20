@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Anlans/ocmaker-mcp",
+  "title": "OC Maker",
+  "description": "Generate, edit, upscale and cut out images with your OC Maker credits.",
+  "repository": {
+    "url": "https://github.com/Anlans/ocmaker-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://ocmaker.art/docs/mcp/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ocmaker.art/api/mcp/",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token. Create an API key at https://ocmaker.art/settings/api-keys and send it as: Bearer <key>.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

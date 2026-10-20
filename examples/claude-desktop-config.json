@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "ocmaker": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://ocmaker.art/api/mcp/",
+        "--header",
+        "Authorization:${OCMAKER_AUTH}"
+      ],
+      "env": { "OCMAKER_AUTH": "Bearer YOUR_API_KEY" }
+    }
+  }
+}
